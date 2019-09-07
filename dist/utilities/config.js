@@ -1,4 +1,6 @@
-export const dbConfig = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.dbConfig = {
     type: "mysql",
     // tslint:disable-next-line: object-literal-sort-keys
     host: "remotemysql.com",
@@ -8,7 +10,7 @@ export const dbConfig = {
     database: "6wzgfbHNWA",
     logging: false,
 };
-
-export const envConfig = {
+exports.envConfig = {
     port: "4201",
 };
+//# sourceMappingURL=config.js.map
