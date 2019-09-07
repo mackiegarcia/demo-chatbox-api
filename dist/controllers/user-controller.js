@@ -32,7 +32,6 @@ class UserService {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const connection = yield this.connect();
-                console.log("con:", connection.isConnected);
                 const userRepository = connection.getRepository(User_1.User);
                 const users = yield userRepository.find({ select: ["id", "username"] });
                 yield connection.close();
@@ -41,7 +40,6 @@ class UserService {
                 return this.result.data;
             }
             catch (error) {
-                console.log("drii:", error);
                 this.result.status = status_code_1.StatusCode.BAD_REQUEST;
                 this.result.error = error;
                 return this.result;

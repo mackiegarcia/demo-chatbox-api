@@ -1,10 +1,6 @@
-Typescript App on Heroku
-========================
+# demo-chatbox-api
 
-This is a simple Node.js + Express application written in Typescript
-that can be built and run on Heroku.
+Steps to run this project:
 
-## Deploy
-To deploy this application simply create a new Heroku app
-
-```
+1. Run `npm install` command
+3. Run `npm start` command
