@@ -4,7 +4,7 @@ import log from "./log";
 const app = express();
 
 app.get("/", (req, res) => {
-    res.json(JSON.stringify({ok: 1})).end();
+    res.json(JSON.stringify({ok: 2})).end();
 });
 
 app.listen(process.env.PORT || 5000, () => {
