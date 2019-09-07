@@ -1,0 +1,26 @@
+{
+  "name": "demo-chatbox-api",
+  "scripts": {
+    "ts:watch": "tsc -w",
+    "ts:build": "tsc",
+    "serve": "nodemon dist/server.js",
+    "watch": "concurrently \"npm run ts:watch\" \"npm run serve\"",
+    "build": "npm run ts:build",
+    "prod:serve": "node dist/server.js",
+    "start": "npm run build && npm run prod:serve",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {
+    "@types/express": "^4.0.36",
+    "@types/node": "^8.0.29",
+    "typescript": "3.3.3333",
+    "@types/winston": "^2.3.4",
+    "express": "^4.17.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "tslint": "^5.5.0"
+  }
+}
