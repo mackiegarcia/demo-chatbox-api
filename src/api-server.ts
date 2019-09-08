@@ -1,6 +1,6 @@
 import * as express from 'express';
-import { environment } from '../src/environments/environment';
-import { routes } from './routes';
+import { envConfig } from "./utilities/config";
+import { routes } from './utilities/routes';
 import * as http from 'http';
 import * as sio from 'socket.io';
 
@@ -31,5 +31,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(process.env.PORT || envConfig.apiServerPort, () => {
-    console.log(`api-service port on[${environment.apiServerPort}]`);
+    console.log(`api-service port on[${envConfig.apiServerPort}]`);
 });
