@@ -7,7 +7,7 @@ const messagService = new MessageController();
 export const routes = express.Router();
 
 routes.get("/", async (req, res) => {
-    res.send("chatbox api test!!!V2");
+    res.send("chatbox api test!!!Mackie");
 });
 
 routes.get("/user/getAll", async (req, res) => {
