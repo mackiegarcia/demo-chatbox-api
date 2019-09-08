@@ -10,5 +10,6 @@ export const dbConfig = {
 };
 
 export const envConfig = {
-    port: "4201",
+    apiServerPort: "4201",
+    chatServerPort: "4202",
 };
