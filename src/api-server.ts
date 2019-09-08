@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 app.use("/", routes);
-app.listen(process.env.API_SERVER_PORT || envConfig.apiServerPort, () => {
+app.listen(process.env.PORT || envConfig.apiServerPort, () => {
     // tslint:disable-next-line: no-console
-    console.log(`api port on[${process.env.API_SERVER_PORT || envConfig.apiServerPort}]`);
+    console.log(`api port on[${process.env.PORT || envConfig.apiServerPort}]`);
 });
